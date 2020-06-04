@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Demo Table" max_length="40" name="x_485652_my_first_demo_table" sizeclass="9" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="encode_utf8=false" label="Requester" max_length="32" name="requester" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="requester"/>
+        </index>
+    </element>
+</database>
